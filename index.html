@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>BOOKMARK URL</h1>
+    </div>
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter title">
+    </div>
+    <div>
+        <label for="url">URL:</label>
+        <input type="text" id="url" placeholder="Enter URL">
+    </div>
+    <button onclick="addBookmark()">Submit</button>
+
+    <h4>List of Bookmarks</h4>
+    <div id="bookmarkContainer">
+        <!-- Bookmarks will be displayed here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
